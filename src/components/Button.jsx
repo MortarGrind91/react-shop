@@ -4,14 +4,13 @@ import { Link } from 'react-router-dom';
 
 const Button = ({ onClick, className, outline, children }) => {
   return (
-    <Link
-      to="/cart"
+    <button
       onClick={onClick}
       className={classNames('button', className, {
         'button--outline': outline,
       })}>
       {children}
-    </Link>
+    </button>
   );
 };
 
